@@ -1,0 +1,167 @@
+/**
+ *	Page - home
+ */
+
+.view.view-home {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	/*.bgPattern{
+		width: 50%;
+		position: fixed;
+		height: 100%;
+		top:0;
+		left:0;
+		z-index: 1;
+		overflow: hidden;
+		.kaleidoscope{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}*/
+
+	.kaleidoscope{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.mainWrapper{
+	//	opacity: 0;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		z-index:3;
+		//transform: rotate(90deg);
+
+		.wrapper{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+		}
+		.loader{
+			position: absolute;
+			z-index: 3;
+			transform: translate(-50%, -50%);
+			width: 200px;
+			height: 180px;
+			top: 50%;
+			left: 50%;
+		}
+		.spinControl{
+			position: absolute;
+			width: 220px;
+			height: 220px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			border: 2px solid red;
+			border-radius: 220px;
+			cursor: move;
+		}
+		.dragContainer{
+			width: 10px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			//background: yellow;
+			transform: translate(-1px, -50%);
+			border-left: 1px dashed white;
+
+			z-index:3;
+			.dragBtn{
+				transform: translate(-50%, -50%);
+				position: absolute;
+				top: 100px;
+				left: 0;
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				background: red;
+			}
+
+		}
+		.mover{
+			position: absolute;
+			left:0;
+			width: 100%;
+			//height: 200px;
+			top: 0;
+			height:0;
+			z-index:1;
+			transition: height 0.5s ease-out;
+			//opacity: 0.6;
+			&.filled{
+				height: 100%;
+			}
+		}
+		.leftPanel{
+			width: 50%;
+			position: absolute;
+			height: 100%;
+			left: 0;
+			top: 0;
+			opacity: 0.5;
+			background: black;
+			overflow: hidden;
+			.mover{
+				//top: -200px;
+				//margin-top: -100px;
+				background:white;
+			}
+		}
+		.rightPanel{
+			top: 0;
+			width: 50%;
+			position: absolute;
+			height: 100%;
+			right: 0;
+			background: white;
+			opacity: 0.5;
+			overflow: hidden;
+			.mover{
+				top: auto;
+				bottom: 0;
+				//bottom: -200px;
+				//margin-bottom: -100px;
+				background:black;
+			}
+		}
+		.test{
+			font: normal 50px/50px 'Arial';
+			color: red;
+			height: 50px;
+			width: 100px;
+			//transform: translate(-50%, -50%);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -50px;
+			z-index: 2;
+		}
+		.test2{
+			font: normal 50px/50px 'Arial';
+			color: red;
+			height: 50px;
+			width: 100px;
+			//transform: translate(-50%, -50%);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -25px;
+			margin-left: -50px;
+			z-index: 2;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+default:
+  - 'tasks'
+
+tasks:
+  - 'availabletasks'
+
+release:
+  - 'clean:default'
+  - 'ts:default'
+  - 'sass'
+  - 'autoprefixer'
+  - 'requirejs:release'
+  - 'uglify:release'
+  - 'cssmin:default'
+  - 'imagemin:default'
+  - 'pngmin:default'
+  - 'clean-build:default'
+  - 'usemin:html'
+  - 'notify:build'
+
+debug:
+  - 'clean:default'
+  - 'ts:default'
+  - 'sass'
+  - 'autoprefixer'
+  - 'requirejs:debug'
+  - 'usemin:html'
+  - 'notify:build'
+
+test:
+  - 'release'
+
+scaffold:
+  - 'scaffold-pages'
+  - 'ts'
+  - 'sass'
+  - 'autoprefixer'
+
+createjs-toolkit-animation-converter:
+  - 'createjs-toolkit-animation-converter'
+
+component:
+  - 'create-component'
+  - 'ts'
+  - 'sass'
+  - 'autoprefixer'
+
+jsonp:
+  - 'create-jsonp'
+
+xmlp:
+  - 'create-xmlp'
+
+create-phonegap-project:
+  - 'prompt:appName'
+  - 'prompt:appBundle'
+  - 'create-phonegap:default'
+  - 'prompt:plugins'
+  - 'prompt:platforms'
+
+pg-build-ios:
+  - 'set-build-dir:phonegap/www/'
+  - 'release'
+  - 'copy:index'
+  - 'filelist:default'
+  - 'replace:uncache'
+  - 'shell:pgbuildIos'
+  - 'notify:buildIos'
+
+pg-run-android:
+  - 'set-build-dir:phonegap/www/'
+  - 'release'
+  - 'copy:index'
+  - 'filelist:default'
+  - 'replace:uncache'
+  - 'shell:pgbuildAndroid'
+  - 'notify:buildAndroid'
+
+create-phonegap-update:
+  - 'prompt:version'
+  - 'set-build-dir:phonegap/www/'
+  - 'release'
+  - 'replace:version'
+  - 'replace:uncache'
+  - 'make-update:default'
+  - 'filelist:current'
+  - 'shell:release'
+
+typescript:
+ - 'ts'
+
+docs:
+ - 'yuidoc'
+
+#crowdin-get:
+# - 'crowdin-get'
+#
+#crowdin-update:
+# - 'crowdin-update'

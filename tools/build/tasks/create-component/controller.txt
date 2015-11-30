@@ -1,0 +1,30 @@
+import AbstractComponentController = require('lib/temple/component/AbstractComponentController');
+
+import {optionsName} = require('app/component/{name}/{optionsName}');
+import {viewModelName} = require('app/component/{name}/{viewModelName}');
+
+class {controllerName} extends AbstractComponentController
+{
+    options:{optionsName};
+    viewModel:{viewModelName};
+
+    constructor(element:HTMLElement, options?:any)
+    {
+        super(element, options);
+    }
+
+    /**
+     *	After calling super.init, your pages DOM is ready
+     */
+    init()
+    {
+        super.init();
+    }
+
+    destruct()
+    {
+        super.destruct();
+    }
+}
+
+export = {controllerName};

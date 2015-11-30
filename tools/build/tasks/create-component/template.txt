@@ -1,0 +1,3 @@
+<div class="component-{underscorePath}">
+	<p>Component {name} creation succesful! Enjoy!</p>
+</div>

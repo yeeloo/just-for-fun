@@ -1,0 +1,30 @@
+import DefaultViewModel = require('app/page/DefaultViewModel');
+import DataManager = require('app/data/DataManager');
+import ko = require('knockout');
+
+class {filename} extends DefaultViewModel
+{
+	// declare observables/computed
+	
+	constructor()
+	{
+		super();
+		
+		// initiate observables
+		
+		// initiate computed
+	}
+	
+	/**
+	 *	Destruct your data objects here
+	 *	- set your observables to null
+	 */
+	destruct()
+	{
+		// Put your cleaning here
+		
+		super.destruct();
+	}
+}
+
+export = {filename};

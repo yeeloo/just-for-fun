@@ -1,0 +1,10 @@
+class Page
+{
+	public static {id}:string = '{path}'; //clone
+}
+
+// use in templates
+window['Page'] = Page;
+
+// use in classes
+export = Page;

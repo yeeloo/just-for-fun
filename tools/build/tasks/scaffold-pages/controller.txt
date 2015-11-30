@@ -1,0 +1,41 @@
+import CustomAbstractController = require('app/page/CustomAbstractController');
+import {viewmodel.filename} = require('{viewmodel.path}'); //{viewmodel.remove}
+
+import ko = require('knockout');
+import Gaia = require('lib/gaia/api/Gaia');
+import DataManager = require('app/data/DataManager');
+
+class {filename} extends CustomAbstractController
+{
+	viewModel: {viewmodel.filename}; //{viewmodel.remove}
+	
+	constructor()
+	{
+		super();
+	}
+
+	/**
+	 *	After calling super.init, your pages DOM is ready
+	 */
+	init()
+	{
+		super.init();
+	}
+	
+	/**
+	 *	Destruct your page objects here
+	 *	- call destruct() on your own objects
+	 *	- clear global event listeners (window.resize, window.scroll, window.keydown, etc)
+	 *	- clear timeouts/intervals
+	 *	- do null-checks on your objects before destructing them, and set them to null afterwards
+	 */
+	destruct()
+	{
+		// Put your cleaning here
+		
+		// always call this last
+		super.destruct();
+	}
+}
+
+export = {filename};

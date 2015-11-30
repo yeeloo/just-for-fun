@@ -1,0 +1,18 @@
+import BaseEvent = require('lib/temple/events/BaseEvent');
+
+import {controllerName} = require('app/component/{name}/{controllerName}');
+
+class {eventName} extends BaseEvent
+{
+	public static INIT:string = '{controllerName}.INIT';
+	
+    public component:{controllerName};
+
+	constructor(type:string, component:{controllerName})
+	{
+		super(type);
+		this.component = component;
+	}
+}
+
+export = {eventName};

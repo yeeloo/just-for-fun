@@ -1,0 +1,21 @@
+define([
+    "require",
+    "exports",
+    'app/component/{path}{controllerName}',
+    'app/component/{path}{viewModelName}',
+    'text!app/component/{path}{basename}.html'
+], function (
+    require,
+    exports,
+    controller,
+    viewmodel,
+    template
+) {
+    exports.controller = controller;
+    exports.viewmodel = viewmodel;
+    exports.template = template;
+    
+    // {name}
+    // {basename}
+    // {path}
+});

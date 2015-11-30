@@ -1,0 +1,14 @@
+<h2 data-bind="text: controller.page.id"></h2>
+<ul>
+	<li>id: <span data-bind="text: controller.page.id"></span></li>
+	<li>title: <span data-bind="text: controller.page.title"></span></li>
+	<li>route: <span data-bind="text: Gaia.router.assemble(Gaia.api.getCurrentBranch(), Gaia.api.getDeeplink())"></span></li>
+	<li>branch: <span data-bind="text: Gaia.api.getCurrentBranch()"></span></li>
+	<li>deeplink: <span data-bind="text: JSON.stringify(Gaia.api.getDeeplink())"></span></li>
+	<li>controller: <span data-bind="text: controller.page.controllerName"></span></li>
+	<li>viewmodel: <span data-bind="text: controller.page.viewModelName"></span></li>
+	<li>template: <span data-bind="text: controller.page.template"></span></li>
+	<li>data: <span data-bind="text: JSON.stringify(controller.page.data)"></span></li>
+</ul>
+
+<p data-bind="localizedText: {id: 'foo'}"></p>
