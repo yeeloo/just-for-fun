@@ -72,7 +72,7 @@ class HomeController extends CustomAbstractController
 		});
 
 		$('#dragBtn', this.element).css('top', 100);
-
+		
 		Draggable.create("#spinThis", {
 			type:"rotation",
 			trigger:$("#spinner"),
