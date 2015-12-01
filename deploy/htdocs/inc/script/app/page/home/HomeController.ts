@@ -87,8 +87,8 @@ class HomeController extends CustomAbstractController
 
 				var angle:number = this.getCurrentRotation('spinThis');
 
-				TweenLite.set($('#test'), {rotation:-angle});
-				TweenLite.set($('#test2'), {rotation:-angle});
+				TweenLite.set($('#leftText'), {rotation:-angle});
+				TweenLite.set($('#rightText'), {rotation:-angle});
 				//TweenLite.set($('#kaleidoContainer'), {rotation:-angle});
 
 

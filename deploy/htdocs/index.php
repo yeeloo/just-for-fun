@@ -47,7 +47,7 @@ $basepath = HttpHelper::getBasePath();
     <base href="<?php echo $basepath ?>" />
 
 	<link href="inc/style/screen.css" rel="stylesheet" type="text/css" />
-
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<script src="inc/script/lib/modernizr/modernizr.js"></script>
 </head>
 <body data-gaia-container="main">

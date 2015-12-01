@@ -67,8 +67,8 @@ define(["require", "exports", '../CustomAbstractController', 'app/component/Kale
                 onThrowUpdate: function () {
                     console.log(_this.getCurrentRotation('spinThis'));
                     var angle = _this.getCurrentRotation('spinThis');
-                    TweenLite.set($('#test'), { rotation: -angle });
-                    TweenLite.set($('#test2'), { rotation: -angle });
+                    TweenLite.set($('#leftText'), { rotation: -angle });
+                    TweenLite.set($('#rightText'), { rotation: -angle });
                     //TweenLite.set($('#kaleidoContainer'), {rotation:-angle});
                     if (angle == 90 || angle == -90) {
                         TweenLite.to($('.mainWrapper'), 0.5, { width: $(window).height(), ease: Power4.easeInOut, overwrite: true });

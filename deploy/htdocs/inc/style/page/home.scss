@@ -64,7 +64,8 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: 2;
-			border: 2px solid red;
+			border: 2px solid #fff;
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 			border-radius: 220px;
 			cursor: move;
 		}
@@ -76,7 +77,7 @@
 			top: 50%;
 			//background: yellow;
 			transform: translate(-1px, -50%);
-			border-left: 1px dashed white;
+			border-left: 1px dashed #999;
 
 			z-index:3;
 			.dragBtn{
@@ -87,7 +88,8 @@
 				width: 50px;
 				height: 50px;
 				border-radius: 50px;
-				background: red;
+				background: #fff;
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 			}
 
 		}
@@ -100,7 +102,7 @@
 			height:0;
 			z-index:1;
 			transition: height 0.5s ease-out;
-			//opacity: 0.6;
+			opacity: 0.8;
 			&.filled{
 				height: 100%;
 			}
@@ -111,13 +113,11 @@
 			height: 100%;
 			left: 0;
 			top: 0;
-			opacity: 0.5;
-			background: black;
 			overflow: hidden;
 			.mover{
 				//top: -200px;
 				//margin-top: -100px;
-				background:white;
+				background:#f1705d;
 			}
 		}
 		.rightPanel{
@@ -126,42 +126,32 @@
 			position: absolute;
 			height: 100%;
 			right: 0;
-			background: white;
-			opacity: 0.5;
 			overflow: hidden;
 			.mover{
 				top: auto;
 				bottom: 0;
 				//bottom: -200px;
 				//margin-bottom: -100px;
-				background:black;
+				background:#5bc3ba;
+
+			}
+			.kaleidoscope{
+				margin-left: -100%;
 			}
 		}
-		.test{
-			font: normal 50px/50px 'Arial';
-			color: red;
-			height: 50px;
-			width: 100px;
-			//transform: translate(-50%, -50%);
+		.text{
+			font: normal 120px/1 'Lobster';
+			height: 140px;
+			width: 400px;
+			text-align: center;
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			margin-top: -25px;
-			margin-left: -50px;
+			margin-top: -70px;
+			margin-left: -200px;
 			z-index: 2;
-		}
-		.test2{
-			font: normal 50px/50px 'Arial';
-			color: red;
-			height: 50px;
-			width: 100px;
-			//transform: translate(-50%, -50%);
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			margin-top: -25px;
-			margin-left: -50px;
-			z-index: 2;
+			color: #fff;
+			text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 		}
 	}
 }

@@ -28,16 +28,17 @@ class Kaleidoscope extends Destructible
 	public initialize(position:string)
 	{
 		var tiles = '';
+
 		if ( this.n ) {
 			for ( var i = 0; i <= this.n * 2; i++ ) {
-				tiles += [ '<div class="tile t', i, '"><div class="image pattern1"></div></div>' ].join( '' );
+				tiles += [ '<div class="tile t', i, '"><div class="image ', position, '"></div></div>' ].join( '' );
 			}
 		}
 		var $kaleidescope = this.element.addClass( 'n' + this.n ).append( tiles ).width($(window).width());
-		if(position == 'right')
+		/*if(position == 'right')
 		{
 			$kaleidescope.css('left', -Math.round($(window).width()/2));
-		}
+		}*/
 		this.$image = $kaleidescope.find( '.image' );
 
 		$(document).on('mousemove' + this.eventNamespace, (e)=>{
